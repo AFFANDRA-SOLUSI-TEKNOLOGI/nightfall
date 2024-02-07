@@ -12,15 +12,27 @@
                 </a>
             </div>
 
-            <x-sidebar.link 
-                title="Dashboard" 
-                href="{{ route('dashboard') }}"
-                :isActive="request()->routeIs('dashboard')"
-            >
-                <x-slot name="icon">
-                    <x-ri-dashboard-fill class="h-6 w-6" />
-                </x-slot>
-            </x-sidebar.link>
+            <div class="space-y-2">
+                <x-sidebar.link 
+                    title="Dashboard" 
+                    href="{{ route('dashboard') }}"
+                    :isActive="request()->routeIs('dashboard')"
+                >
+                    <x-slot name="icon">
+                        <x-ri-dashboard-fill class="h-6 w-6" />
+                    </x-slot>
+                </x-sidebar.link>
+
+                <x-sidebar.link 
+                    title="User" 
+                    href="{{ route('user.index') }}"
+                    :isActive="request()->routeIs('user.*')"
+                >
+                    <x-slot name="icon">
+                        <x-ri-user-line class="h-6 w-6" />
+                    </x-slot>
+                </x-sidebar.link>
+            </div>
         </ul>
     </div>
 </div>
