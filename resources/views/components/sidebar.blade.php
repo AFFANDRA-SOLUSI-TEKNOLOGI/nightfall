@@ -5,17 +5,22 @@
     </div>
     <div class="drawer-side">
         <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-        <ul class="menu bg-white dark:bg-gray-800 border-r border-gray-100 dark:border-gray-700 menu-lg p-4 w-80 min-h-full text-base-content flex justify-between">
-            <div>
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto" />
-                    </a>
-                </div>
-
-                {{-- <li><x-link href="/"><x-heroicon-o-home class="h-5 w-5" /> Beranda</x-link></li> --}}
+        <ul class="menu bg-white dark:bg-gray-800 border-r border-gray-100 dark:border-gray-700 p-4 w-72 min-h-full text-base-content">
+            <div class="shrink-0 flex items-center mb-10">
+                <a href="{{ route('dashboard') }}">
+                    <x-application-logo class="block h-9 w-auto" />
+                </a>
             </div>
 
+            <x-sidebar.link 
+                title="Dashboard" 
+                href="{{ route('dashboard') }}"
+                :isActive="request()->routeIs('dashboard')"
+            >
+                <x-slot name="icon">
+                    <x-ri-dashboard-fill class="h-6 w-6" />
+                </x-slot>
+            </x-sidebar.link>
         </ul>
     </div>
 </div>
