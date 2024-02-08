@@ -1,8 +1,8 @@
 {
     "name": "affandra-solusi-teknologi/nightfall",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Laravel + Jetstream + TailwindCSS + Livewire Powergrid",
+    "keywords": ["laravel", "larave-framework", "jetstream", "livewire", "tailwindcss", "jetstream-laravel", "livewire-powergrid", "jetstream-livewire"],
     "license": "MIT",
     "require": {
         "php": "^8.1",
