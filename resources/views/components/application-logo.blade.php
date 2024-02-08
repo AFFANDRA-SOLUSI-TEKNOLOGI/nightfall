@@ -1,4 +1,4 @@
-<svg width="749" height="151" viewBox="0 0 749 151" fill="none" xmlns="http://www.w3.org/2000/svg" {{ $attributes }}>
+<svg xmlns="http://www.w3.org/2000/svg" width="569" height="151" viewBox="0 0 569 151" fill="none" {{ $attributes }}>
   <mask id="mask0_3_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="151" height="151">
     <ellipse cx="75.4424" cy="75.1979" rx="75.1979" ry="75.1979" fill="#6366F1"/>
   </mask>
