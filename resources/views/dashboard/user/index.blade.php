@@ -4,7 +4,7 @@
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                 {{ __('User') }}
             </h2>
-            <x-button-link variant="primary" href="{{ route('user.create') }}">Add</x-button-link>
+            <x-button variant="primary" href="{{ route('user.create') }}">Add</x-button>
         </div>
     </x-slot>
 

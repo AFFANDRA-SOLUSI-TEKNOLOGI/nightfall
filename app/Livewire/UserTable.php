@@ -77,15 +77,16 @@ final class UserTable extends PowerGridComponent
     public function actions(\App\Models\User $row): array
     {
         return [
-            Button::make('edit', 'Edit')
-               ->class('bg-indigo-500 cursor-pointer text-white px-3 py-2 m-1 rounded text-sm inline-block')
-               ->route('user.edit', ['user' => $row->id])
-               ->bladeComponent('link', ['text' => 'Edit'])
-               ->target('_self'),
+            Button::add('edit')
+                ->slot('Edit')
+                ->route('user.edit', ['user' => $row->id])
+                ->bladeComponent('button', ['variant' => 'primary', 'title' => 'Edit'])
+                ->target('_self'),
 
            Button::make('destroy', 'Delete')
-               ->class('bg-error cursor-pointer text-white px-3 py-2 m-1 rounded text-sm inline-block')
+               ->class('inline-flex items-center px-4 py-2 border border-transparent rounded-md font-semibold text-xs uppercase tracking-widest transition ease-in-out duration-150  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-red-500 text-white hover:bg-red-400 focus:bg-red-700 dark:focus:bg-red-100 active:bg-red-900 dark:active:bg-red-300')
                ->route('user.destroy', ['user' => $row->id])
+               ->bladeComponent('button', ['title' => 'Delete'])
                ->method('delete')
                ->target('_self'),
         ];
