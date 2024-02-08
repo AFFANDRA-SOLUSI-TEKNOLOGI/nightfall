@@ -52,7 +52,7 @@
                         title="Dummy Link" 
                         href="#"
                     />
-                    
+
                     <x-sidebar.link 
                         title="Dummy Link" 
                         href="#"
