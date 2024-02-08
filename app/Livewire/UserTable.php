@@ -84,7 +84,7 @@ final class UserTable extends PowerGridComponent
                 ->target('_self'),
 
            Button::make('destroy', 'Delete')
-               ->class('inline-flex items-center px-4 py-2 border border-transparent rounded-md font-semibold text-xs uppercase tracking-widest transition ease-in-out duration-150  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-red-500 text-white hover:bg-red-400 focus:bg-red-700 dark:focus:bg-red-100 active:bg-red-900 dark:active:bg-red-300')
+               ->class('inline-flex items-center px-4 py-2 border border-transparent rounded-md font-semibold text-xs uppercase tracking-widest transition ease-in-out duration-150  focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 bg-red-500 text-white hover:bg-red-400 focus:bg-red-700 dark:focus:bg-red-100 active:bg-red-900 dark:active:bg-red-300')
                ->route('user.destroy', ['user' => $row->id])
                ->bladeComponent('button', ['title' => 'Delete'])
                ->method('delete')

@@ -28,4 +28,9 @@ Route::middleware([
     })->name('dashboard');
 
     Route::resource('/user', UserController::class, ['names' => 'user']);
+
+    // you can remove this routes
+    Route::get('/button', function() {
+        return view('dashboard.button');
+    })->name('button.index');
 });

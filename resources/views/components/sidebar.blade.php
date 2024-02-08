@@ -29,9 +29,42 @@
                     :isActive="request()->routeIs('user.*')"
                 >
                     <x-slot name="icon">
-                        <x-ri-user-line class="h-6 w-6" />
+                        <x-heroicon-o-user class="h-6 w-6" />
                     </x-slot>
                 </x-sidebar.link>
+
+                <x-sidebar.link 
+                    title="Buttons" 
+                    href="{{ route('button.index') }}"
+                    :isActive="request()->routeIs('button.*')"
+                >
+                    <x-slot name="icon">
+                        <x-heroicon-o-adjustments-horizontal class="h-6 w-6" />
+                    </x-slot>
+                </x-sidebar.link>
+
+                <x-sidebar.dropdown title="Dropdown">
+                    <x-slot name="icon">
+                        <x-heroicon-o-square-2-stack class="w-6 h-6" />
+                    </x-slot>
+                    
+                    <x-sidebar.link 
+                        title="Dummy Link" 
+                        href="#"
+                    />
+                    
+                    <x-sidebar.link 
+                        title="Dummy Link" 
+                        href="#"
+                    />
+                </x-sidebar.dropdown>
+
+                <x-sidebar.group title="Category">
+                    <x-sidebar.link 
+                        title="Dummy Link" 
+                        href="#"
+                    />
+                </x-sidebar.group>
             </div>
         </ul>
     </div>
