@@ -1,4 +1,4 @@
-<x-print-layout>
+<x-print-layout where="user print">
     <center>
         <h2>All User</h2>
     </center>
