@@ -5,7 +5,7 @@
     </div>
     <div class="drawer-side">
         <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-        <ul class="menu bg-white dark:bg-gray-800 border-r border-gray-100 dark:border-gray-700 p-4 w-72 min-h-full text-base-content">
+        <ul class="menu bg-white dark:bg-gray-800 border-r border-gray-100 dark:border-gray-700 p-4 w-60 md:w-72 min-h-full text-base-content">
             <div class="shrink-0 flex items-center mb-10">
                 <a href="{{ route('dashboard') }}">
                     <x-application-logo class="block h-9 w-auto" />
