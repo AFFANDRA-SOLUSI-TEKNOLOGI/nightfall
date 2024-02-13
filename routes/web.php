@@ -27,6 +27,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
+    Route::get('/user/print', [UserController::class, 'print'])->name('user.print');
     Route::resource('/user', UserController::class, ['names' => 'user']);
 
     // you can remove this routes

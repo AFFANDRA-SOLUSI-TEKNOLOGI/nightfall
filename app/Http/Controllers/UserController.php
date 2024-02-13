@@ -87,7 +87,7 @@ class UserController extends Controller
     }
 
     /**
-     * Print all user
+     * Print all records
      */
     public function print() {
         return view('print.user', ['data' => User::all()]);

@@ -1,6 +1,11 @@
 @props([
     'href' => '#',
-    'text' => false
+    'text' => false,
+    'hardRefresh' => false
 ])
 
-<a href="{{ $href }}" {{ $attributes }} wire:navigate>{{ $text ? $text : $slot }}</a>
+@if($hardRefresh)
+    <a href="{!! $href !!}" {{ $attributes }}>{{ $text ? $text : $slot }}</a>
+@else
+    <a href="{!! $href !!}" {{ $attributes }} wire:navigate>{{ $text ? $text : $slot }}</a>
+@endif

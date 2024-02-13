@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout where="home">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
             <div>
                 <a href="https://github.com/affandra-solusi-teknologi/nightfall" target="_blank">
@@ -29,7 +29,7 @@
                         </div>
                     @endauth
                 @endif
-                <p class="mt-2 font-medium text-gray-500 dark:text-gray-400 leading-relaxed"><a href="https://github.com/affandra-solusi-teknologi/nightfall" target="_blank" class="hover:text-white transition">Nightfall</a> v1.0.0 PHP v{{ PHP_VERSION }}</p>
+                <p class="mt-2 font-medium text-gray-500 dark:text-gray-400 leading-relaxed"><a href="https://github.com/affandra-solusi-teknologi/nightfall" target="_blank" class="hover:text-white transition">Nightfall</a> v1.0.2 PHP v{{ PHP_VERSION }}</p>
             </div>
     </div>
 </x-guest-layout>
