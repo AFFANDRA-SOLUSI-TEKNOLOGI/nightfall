@@ -29,7 +29,7 @@
                         </div>
                     @endauth
                 @endif
-                <p class="mt-2 font-medium text-gray-500 dark:text-gray-400 leading-relaxed"><a href="https://github.com/affandra-solusi-teknologi/nightfall" target="_blank" class="hover:text-white transition">Nightfall</a> v1.0.0 PHP v{{ PHP_VERSION }}</p>
+                <p class="mt-2 font-medium text-gray-500 dark:text-gray-400 leading-relaxed"><a href="https://github.com/affandra-solusi-teknologi/nightfall" target="_blank" class="hover:text-white transition">Nightfall</a> v1.0.2 PHP v{{ PHP_VERSION }}</p>
             </div>
     </div>
 </x-guest-layout>
