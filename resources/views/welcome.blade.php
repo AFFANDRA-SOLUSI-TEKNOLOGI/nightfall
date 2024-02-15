@@ -11,7 +11,7 @@
                     @auth
                         <div class="flex justify-center gap-2">
                             <x-button variant="primary" href="{{ route('dashboard') }}">Dashboard</x-button>
-                            <form method="POST" action="{{ route('web.logout') }}">
+                            <form method="POST" action="{{ route('logout') }}">
                                 @csrf
                                 
                                 <x-button variant="danger" class="flex gap-2" onclick="event.preventDefault(); this.closest('form').submit();">
